@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>旅行の詳細｜旅行の思い出マップ</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <h1 id="trip-title-link">旅行の思い出マップ</h1>
+        </header>
+
+        <main class="detail-container">
+            <a class="back-link" href="index.html">&larr; 地図へ戻る</a>
+
+            <div id="detail-content">
+                <img id="hero-image" class="hero-image" alt="" />
+                <h2 class="detail-title" id="detail-title"></h2>
+                <div class="detail-meta">
+                    <span id="detail-place"></span>
+                    <span id="detail-date"></span>
+                </div>
+                <p class="detail-summary" id="detail-summary"></p>
+                <p class="detail-description" id="detail-description"></p>
+
+                <div class="gallery" id="gallery"></div>
+            </div>
+
+            <div class="error-message" id="detail-error" style="display: none">
+                <h2>データが見つかりません</h2>
+                <p></p>
+                <a class="btn" href="index.html">地図へ戻る</a>
+            </div>
+        </main>
+
+        <div class="lightbox-overlay" id="lightbox-overlay" hidden>
+            <button class="lightbox-close" id="lightbox-close" aria-label="閉じる">&times;</button>
+            <img id="lightbox-image" alt="" />
+        </div>
+
+        <script src="js/data-loader.js"></script>
+        <script src="js/detail.js"></script>
+    </body>
+</html>

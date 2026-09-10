@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>旅行の思い出マップ</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <h1 id="trip-title">旅行の思い出マップ</h1>
+            <span class="trip-count" id="trip-period"></span>
+        </header>
+
+        <main class="main-layout">
+            <div id="map"></div>
+            <div id="map-message" style="display: none"></div>
+            <aside class="trip-list">
+                <h2>訪問スポット一覧</h2>
+                <div id="trip-list"></div>
+            </aside>
+        </main>
+
+        <script src="js/data-loader.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
