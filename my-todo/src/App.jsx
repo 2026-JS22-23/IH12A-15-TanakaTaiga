@@ -34,7 +34,7 @@ export default function App() {
                 ))}
             </ul>
             <p>残り {todos.length} 件</p>
-            <button onClick={() => setCount((c) => c + 1)}>クリック回数: {count}</button>
+            {/* <button onClick={() => setCount((c) => c + 1)}>クリック回数: {count}</button> */}
         </div>
     );
 }
